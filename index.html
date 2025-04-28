@@ -73,16 +73,22 @@ h3 {
 }
 
 .view-profile a {
-  color: #ffff00; /* Neon yellow for links */
+  color: #ffff00;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 10px 20px;
-  border: 2px solid #ffff00;
-  border-radius: 5px;
-  background-color: #111;
-  display: inline-block; /* Keeps the button in view */
-  margin-top: 10px
+}
+
+.view-profile a:hover {
+  background-color: #00ff00;
+  color: #111;
+  text-decoration: underline;
+}
+
+/* Reveal the button when hovering over the player card */
+.player-card:hover .view-profile {
+  display: block; /* Show on hover */
+}
 
 
 
