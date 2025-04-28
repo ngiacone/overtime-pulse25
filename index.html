@@ -16,17 +16,20 @@ header {
   text-align: center;
 }
 
-    .player-card {
+    /* General card styling */
+.player-card {
   position: relative;
   width: 250px;
   height: 400px;
   background: linear-gradient(135deg, #ff00ff, #00ffff);
   color: white;
   border-radius: 10px;
-  margin: 15px;
+  margin: 20px;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: inline-block; /* Ensures the cards stay inline */
+  vertical-align: top; /* Aligns the cards properly */
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -38,11 +41,14 @@ header {
 .player-image {
   width: 100%;
   height: 60%;
-  object-fit: cover; /* Ensures the image fills the card */
+  object-fit: cover; /* Keeps the image fully visible */
 }
 
+/* Styling for text info */
 .player-info {
   padding: 10px 20px;
+  height: 35%; /* Reduced height for text box */
+  overflow: hidden;
 }
 
 h3 {
@@ -73,6 +79,8 @@ h3 {
   border: 2px solid #ffff00;
   border-radius: 5px;
   background-color: #111;
+  display: inline-block; /* Keeps the button in view */
+  margin-top: 10px; /* Adds some space before the button */
 }
 
 .view-profile a:hover {
@@ -80,6 +88,14 @@ h3 {
   color: #111;
   text-decoration: underline;
 }
+
+/* Container for player cards to center them */
+.player-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers cards horizontally */
+}
+
 
 
     a {
